@@ -18,4 +18,6 @@ return {
     color13 = "#cdb6f9",
     color14 = "#47ac9b",
     color15 = "#e6f6e8",
+
+    border = "#90c99b",
 }

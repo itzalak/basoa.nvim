@@ -1,105 +1,8 @@
-local config = require "laubwald.config"
--- TODO: DELETE
+---@class Highlights
 local Highlights = {}
 
-function Highlights.set_highlights(colors)
-    local highlights = {
-        Normal = { fg = colors.fg, bg = colors.bg },
-        SignColumn = { bg = colors.bg },
-        MsgArea = { fg = colors.fg, bg = colors.bg },
-        ModeMsg = { fg = colors.fg, bg = colors.bg },
-        MsgSeparator = { fg = colors.fg, bg = colors.bg },
-        SpellBad = { italic = config.options.underline, undercurl = config.options.undercurl },
-        SpellCap = { fg = colors.color03, undercurl = config.options.undercurl },
-        SpellLocal = { fg = colors.color02, undercurl = config.options.undercurl },
-        SpellRare = { fg = colors.color05, italic = config.options.underline, undercurl = config.options.undercurl },
-        NormalNC = { fg = colors.fg, bg = colors.bg },
-        Pmenu = { fg = colors.color07, bg = colors.bg, sp = "NONE" },
-        PmenuSel = { fg = colors.bg, bg = colors.color04 },
-        WildMenu = { fg = colors.fg, bg = colors.color04 },
-        CursorLineNr = { fg = colors.color00, italic = config.options.bold },
-        Comment = { fg = colors.color08, italic = config.options.italics },
-        Folded = { fg = colors.color00, bg = colors.color00 },
-        FoldColumn = { fg = colors.color00, bg = colors.color00 },
-        LineNr = { fg = colors.color08 },
-        Whitespace = { fg = colors.bg },
-        VertSplit = { fg = colors.color08, bg = colors.bg },
-        CursorLine = { bg = colors.bg },
-        CursorColumn = { bg = colors.bg },
-        ColorColumn = { bg = colors.bg },
-        NormalFloat = { bg = colors.bg },
-        FloatBorder = { bg = colors.color00 },
-        FloatTitle = { bg = colors.color00 },
-        Visual = { bg = colors.color04 },
-        VisualNOS = { bg = colors.color00 },
-        WarningMsg = { fg = colors.warning, bg = colors.bg },
-        DiffAdd = { fg = colors.color00, bg = colors.color02 },
-        DiffChange = { fg = colors.color00, bg = colors.color03, italic = config.options.underline },
-        DiffDelete = { fg = colors.color00, bg = colors.color01 },
-        QuickFixLine = { bg = colors.color04 },
-        PmenuSbar = { bg = colors.color00 },
-        PmenuThumb = { bg = colors.color08 },
-        MatchWord = { italic = config.options.underline },
-        MatchParen = { fg = colors.color04, bg = colors.bg, italic = config.options.underline },
-        MatchWordCur = { italic = config.options.underline },
-        MatchParenCur = { italic = config.options.underline },
-        Cursor = { fg = colors.color00, bg = colors.color08 },
-        lCursor = { fg = colors.color00, bg = colors.color08 },
-        CursorIM = { fg = colors.color00, bg = colors.color08 },
-        TermCursor = { fg = colors.color00, bg = colors.color08 },
-        TermCursorNC = { fg = colors.color00, bg = colors.color08 },
-        Conceal = { fg = colors.color00 },
-        Directory = { fg = colors.color04 },
-        SpecialKey = { fg = colors.color04, italic = config.options.bold },
-        Title = { fg = colors.color04, italic = config.options.bold },
-        ErrorMsg = { fg = colors.error, bg = colors.bg, italic = config.options.bold },
-        Search = { fg = colors.color00, bg = colors.color04 },
-        IncSearch = { fg = colors.color09, bg = colors.color00 },
-        Substitute = { fg = colors.color00, bg = colors.color09 },
-        MoreMsg = { fg = colors.color09 },
-        Question = { fg = colors.color09 },
-        EndOfBuffer = { fg = colors.bg },
-        NonText = { fg = colors.bg },
-        Variable = { fg = colors.color12 },
-        String = { fg = colors.color09 },
-        Character = { fg = colors.color09 },
-        Constant = { fg = colors.color12 },
-        Number = { fg = colors.color10 },
-        Boolean = { fg = colors.color04 },
-        Float = { fg = colors.color10 },
-        Identifier = { fg = colors.color12 },
-        Function = { fg = colors.color03 },
-        Operator = { fg = colors.fg },
-        Type = { fg = colors.color12 },
-        StorageClass = { fg = colors.color04 },
-        Structure = { fg = colors.color04 },
-        Typedef = { fg = colors.color04 },
-        Keyword = { fg = colors.color04 },
-        Statement = { fg = colors.color05 },
-        Conditional = { fg = colors.color04 },
-        Repeat = { fg = colors.color05 },
-        Label = { fg = colors.color05 },
-        Exception = { fg = colors.color05 },
-        Include = { fg = colors.color05 },
-        PreProc = { fg = colors.color05 },
-        Define = { fg = colors.color05 },
-        Macro = { fg = colors.color05 },
-        PreCondit = { fg = colors.color05 },
-        Special = { fg = colors.color09 },
-        SpecialChar = { fg = colors.fg },
-        Tag = { fg = colors.color04 },
-        Debug = { fg = colors.color01 },
-        Delimiter = { fg = colors.color08 },
-        SpecialComment = { fg = colors.color08 },
-        Underlined = { italic = config.options.underline },
-        Bold = { italic = config.options.bold },
-        Italic = { italic = config.options.italics },
-        Ignore = { fg = colors.color12, bg = colors.bg, italic = config.options.bold },
-        Todo = { fg = colors.color13, bg = colors.bg, italic = config.options.bold },
-        Error = { fg = colors.error, bg = colors.bg, italic = config.options.bold },
-        TabLine = { fg = colors.color00, bg = colors.color07 },
-        TabLineSel = { fg = colors.fg, bg = colors.color07 },
-        TabLineFill = { fg = colors.color07, bg = colors.color07 },
+function Highlights.get(colors, opts)
+    return {
 
         -- Git
         SignAdd = { fg = colors.color02 },
@@ -124,18 +27,18 @@ function Highlights.set_highlights(colors)
         --markdownH6 = { fg = colors.color04 },
         --
         --markdownHeadingDelimiter = { fg = colors.color04 },
-        --markdownHeadingRule = { fg = colors.fg, italic = config.options.bold },
+        --markdownHeadingRule = { fg = colors.fg, italic = opts.bold },
         --markdownId = { fg = colors.color05 },
         --markdownIdDeclaration = { fg = colors.color04 },
         --markdownIdDelimiter = { fg = colors.color00 },
         --markdownLinkDelimiter = { fg = colors.color00 },
-        --markdownBold = { fg = colors.color04, italic = config.options.bold },
-        --markdownItalic = { italic = config.options.italics },
-        --markdownBoldItalic = { fg = colors.color03, italic = config.options.bold, italic = config.options.italics },
+        --markdownBold = { fg = colors.color04, italic = opts.bold },
+        --markdownItalic = { italic = opts.italics },
+        --markdownBoldItalic = { fg = colors.color03, italic = opts.bold, italic = opts.italics },
         --markdownListMarker = { fg = colors.color04 },
         --markdownOrderedListMarker = { fg = colors.color04 },
         --markdownRule = { fg = colors.color00 },
-        --markdownUrl = { fg = colors.color12, italic = config.options.underline },
+        --markdownUrl = { fg = colors.color12, italic = opts.underline },
         --markdownLinkText = { fg = colors.color04 },
         --markdownFootnote = { fg = colors.color09 },
         --markdownFootnoteDefinition = { fg = colors.color09 },
@@ -144,7 +47,7 @@ function Highlights.set_highlights(colors)
         RenderMarkdownBullet = { fg = colors.color12 },
         RenderMarkdownDash = { fg = colors.color12 },
         RenderMarkdownCode = { bg = colors.color00 },
-        RenderMarkdownTableHead = { fg = colors.color06, bold = config.options.bold },
+        RenderMarkdownTableHead = { fg = colors.color06, bold = opts.bold },
         RenderMarkdownTableRow = { fg = colors.color06 },
 
         --RenderMarkdownH1 = { fg = colors.color11 },
@@ -228,10 +131,10 @@ function Highlights.set_highlights(colors)
         ["@constant.builtin"] = { link = "Special" },
         ["@constant.macro"] = { link = "Define" },
         ["@markup"] = { fg = colors.fg },
-        ["@markup.strong"] = { italic = config.options.bold },
-        ["@markup.emphasis"] = { italic = config.options.italics },
-        ["@markup.underline"] = { italic = config.options.underline },
-        ["@markup.strike"] = { italic = config.options.strikethrough },
+        ["@markup.strong"] = { italic = opts.bold },
+        ["@markup.emphasis"] = { italic = opts.italics },
+        ["@markup.underline"] = { italic = opts.underline },
+        ["@markup.strike"] = { italic = opts.strikethrough },
         ["@markup.heading"] = { link = "Title" },
         ["@markup.raw"] = { link = "String" },
         ["@markup.math"] = { link = "Special" },
@@ -253,10 +156,10 @@ function Highlights.set_highlights(colors)
         ["@namespace"] = { fg = colors.fg },
         ["@symbol"] = { link = "Identifier" },
         ["@text"] = { fg = colors.fg },
-        ["@text.strong"] = { italic = config.options.bold },
-        ["@text.emphasis"] = { italic = config.options.italics },
-        ["@text.underline"] = { italic = config.options.underline },
-        ["@text.strike"] = { italic = config.options.strikethrough },
+        ["@text.strong"] = { italic = opts.bold },
+        ["@text.emphasis"] = { italic = opts.italics },
+        ["@text.underline"] = { italic = opts.underline },
+        ["@text.strike"] = { italic = opts.strikethrough },
         ["@text.title"] = { link = "Title" },
         ["@text.literal"] = { link = "String" },
         ["@text.uri"] = { link = "Underlined" },
@@ -268,10 +171,10 @@ function Highlights.set_highlights(colors)
         ["@text.todo.checked"] = { fg = colors.color06 },
         ["@text.todo.unchecked"] = { fg = colors.color07 },
         ["@text.note"] = { link = "SpecialComment" },
-        ["@text.note.comment"] = { fg = colors.color05, italic = config.options.bold },
+        ["@text.note.comment"] = { fg = colors.color05, italic = opts.bold },
         ["@text.warning"] = { link = "WarningMsg" },
         ["@text.danger"] = { link = "ErrorMsg" },
-        ["@text.danger.comment"] = { fg = colors.fg, bg = colors.color01, italic = config.options.bold },
+        ["@text.danger.comment"] = { fg = colors.fg, bg = colors.color01, italic = opts.bold },
         ["@text.diff.add"] = { link = "SignAdd" },
         ["@text.diff.delete"] = { link = "SignDelete" },
         ["@tag"] = { link = "Tag" },
@@ -326,10 +229,10 @@ function Highlights.set_highlights(colors)
         DiagnosticSignInformation = { fg = colors.info },
         DiagnosticSignInfo = { fg = colors.info },
         DiagnosticSignHint = { fg = colors.hint },
-        DiagnosticUnderlineError = { sp = colors.error, undercurl = config.options.undercurl },
-        DiagnosticUnderlineWarn = { sp = colors.warning, undercurl = config.options.undercurl },
-        DiagnosticUnderlineInfo = { sp = colors.info, undercurl = config.options.undercurl },
-        DiagnosticUnderlineHint = { sp = colors.hint, undercurl = config.options.undercurl },
+        DiagnosticUnderlineError = { sp = colors.error, undercurl = opts.undercurl },
+        DiagnosticUnderlineWarn = { sp = colors.warning, undercurl = opts.undercurl },
+        DiagnosticUnderlineInfo = { sp = colors.info, undercurl = opts.undercurl },
+        DiagnosticUnderlineHint = { sp = colors.hint, undercurl = opts.undercurl },
 
         LspDiagnosticsSignError = { fg = colors.error },
         LspDiagnosticsSignWarning = { fg = colors.warning },
@@ -341,26 +244,21 @@ function Highlights.set_highlights(colors)
         LspDiagnosticsInformation = { fg = colors.info },
         LspDiagnosticsInfo = { fg = colors.info },
         LspDiagnosticsHint = { fg = colors.hint },
-        LspDiagnosticsUnderlineError = { italic = config.options.underline, undercurl = config.options.undercurl },
-        LspDiagnosticsUnderlineWarning = { italic = config.options.underline, undercurl = config.options.undercurl },
-        LspDiagnosticsUnderlineInformation = { italic = config.options.underline, undercurl = config.options.undercurl },
-        LspDiagnosticsUnderlineInfo = { italic = config.options.underline, undercurl = config.options.undercurl },
-        LspDiagnosticsUnderlineHint = { italic = config.options.underline, undercurl = config.options.undercurl },
+        LspDiagnosticsUnderlineError = { italic = opts.underline, undercurl = opts.undercurl },
+        LspDiagnosticsUnderlineWarning = { italic = opts.underline, undercurl = opts.undercurl },
+        LspDiagnosticsUnderlineInformation = { italic = opts.underline, undercurl = opts.undercurl },
+        LspDiagnosticsUnderlineInfo = { italic = opts.underline, undercurl = opts.undercurl },
+        LspDiagnosticsUnderlineHint = { italic = opts.underline, undercurl = opts.undercurl },
         LspReferenceRead = { fg = colors.color08 },
         LspReferenceText = { fg = colors.color08 },
         LspReferenceWrite = { fg = colors.color08 },
-        LspCodeLens = { fg = colors.color08, italic = config.options.italics },
-        LspCodeLensSeparator = { fg = colors.color08, italic = config.options.italics },
+        LspCodeLens = { fg = colors.color08, italic = opts.italics },
+        LspCodeLensSeparator = { fg = colors.color08, italic = opts.italics },
 
         -- LspTrouble
         TroubleText = { fg = colors.fg },
         TroubleCount = { fg = colors.color05, bg = colors.bg },
         TroubleNormal = { fg = colors.fg, bg = colors.bg },
-
-        -- Telescope
-        TelescopeSelection = { fg = colors.color04 },
-        TelescopeMatching = { fg = colors.color03, italic = config.options.bold },
-        TelescopeBorder = { fg = colors.color04, bg = colors.bg },
 
         -- NvimTree
         NvimTreeFolderIcon = { fg = colors.color04 },
@@ -370,11 +268,11 @@ function Highlights.set_highlights(colors)
         NvimTreeFolderName = { fg = colors.color04 },
         NvimTreeOpenedFolderName = {
             fg = colors.color04,
-            italic = config.options.bold,
-            italic = config.options.italics,
+            italic = opts.bold,
+            italic = opts.italics,
         },
-        NvimTreeEmptyFolderName = { fg = colors.color08, italic = config.options.italics },
-        NvimTreeGitIgnored = { fg = colors.color08, italic = config.options.italics },
+        NvimTreeEmptyFolderName = { fg = colors.color08, italic = opts.italics },
+        NvimTreeGitIgnored = { fg = colors.color08, italic = opts.italics },
         NvimTreeImageFile = { fg = colors.color00 },
         NvimTreeSpecialFile = { fg = colors.color09 },
         NvimTreeEndOfBuffer = { fg = colors.color07 },
@@ -387,7 +285,7 @@ function Highlights.set_highlights(colors)
         NvimTreeGitMerge = { fg = colors.color03 },
         NvimTreeGitDirty = { fg = colors.color03 },
         NvimTreeSymlink = { fg = colors.color12 },
-        NvimTreeRootFolder = { fg = colors.fg, italic = config.options.bold },
+        NvimTreeRootFolder = { fg = colors.fg, italic = opts.bold },
         NvimTreeExecFile = { fg = colors.color10 },
 
         -- Buffer
@@ -395,17 +293,17 @@ function Highlights.set_highlights(colors)
         BufferCurrentIndex = { fg = colors.fg, bg = colors.bg },
         BufferCurrentMod = { fg = colors.color03, bg = colors.bg },
         BufferCurrentSign = { fg = colors.color04, bg = colors.bg },
-        BufferCurrentTarget = { fg = colors.color01, bg = colors.bg, italic = config.options.bold },
+        BufferCurrentTarget = { fg = colors.color01, bg = colors.bg, italic = opts.bold },
         BufferVisible = { fg = colors.fg, bg = colors.bg },
         BufferVisibleIndex = { fg = colors.fg, bg = colors.bg },
         BufferVisibleMod = { fg = colors.color03, bg = colors.bg },
         BufferVisibleSign = { fg = colors.color08, bg = colors.bg },
-        BufferVisibleTarget = { fg = colors.color01, bg = colors.bg, italic = config.options.bold },
+        BufferVisibleTarget = { fg = colors.color01, bg = colors.bg, italic = opts.bold },
         BufferInactive = { fg = colors.color08, bg = colors.color00 },
         BufferInactiveIndex = { fg = colors.color08, bg = colors.color00 },
         BufferInactiveMod = { fg = colors.color03, bg = colors.color00 },
         BufferInactiveSign = { fg = colors.color08, bg = colors.color00 },
-        BufferInactiveTarget = { fg = colors.color01, bg = colors.color00, italic = config.options.bold },
+        BufferInactiveTarget = { fg = colors.color01, bg = colors.color00, italic = opts.bold },
 
         -- StatusLine
         StatusLine = { fg = colors.color08, bg = colors.color00 },
@@ -416,7 +314,7 @@ function Highlights.set_highlights(colors)
 
         -- IndentBlankline
         IndentBlanklineContextChar = { fg = colors.color08 },
-        IndentBlanklineContextStart = { italic = config.options.underline },
+        IndentBlanklineContextStart = { italic = opts.underline },
         IndentBlanklineChar = { fg = colors.color00 },
         IndentBlanklineSpaceChar = { fg = colors.color12 },
         IndentBlanklineSpaceCharBlankline = { fg = colors.color03 },
@@ -426,12 +324,12 @@ function Highlights.set_highlights(colors)
         DashboardDesc = { fg = colors.color08 },
         DashboardFooter = { fg = colors.color12 },
         DashboardHeader = { fg = colors.color04 },
-        DashboardIcon = { fg = colors.color08, italic = config.options.bold },
+        DashboardIcon = { fg = colors.color08, italic = opts.bold },
         DashboardKey = { fg = colors.color09 },
         DashboardShortCut = { fg = colors.color09 },
 
         -- Cmp
-        CmpItemAbbrDeprecated = { fg = colors.color08, italic = config.options.strikethrough },
+        CmpItemAbbrDeprecated = { fg = colors.color08, italic = opts.strikethrough },
         CmpItemAbbrMatch = { fg = colors.color04 },
         CmpItemAbbrMatchFuzzy = { fg = colors.color04 },
         CmpItemKindFunction = { fg = colors.color04 },
@@ -460,31 +358,6 @@ function Highlights.set_highlights(colors)
         CmpItemKindOperator = { fg = colors.fg },
         CmpItemKindTypeParameter = { fg = colors.color01 },
     }
-
-    for highlight, parameters in pairs(highlights) do
-        vim.api.nvim_set_hl(0, highlight, parameters)
-    end
-end
-
-function Highlights.set_terminal_colors(colors)
-    vim.g.terminal_color_0 = colors.color00
-    vim.g.terminal_color_1 = colors.color01
-    vim.g.terminal_color_2 = colors.color02
-    vim.g.terminal_color_3 = colors.color03
-    vim.g.terminal_color_4 = colors.color04
-    vim.g.terminal_color_5 = colors.color05
-    vim.g.terminal_color_6 = colors.color06
-    vim.g.terminal_color_7 = colors.color07
-    vim.g.terminal_color_8 = colors.color08
-    vim.g.terminal_color_9 = colors.color09
-    vim.g.terminal_color_10 = colors.color10
-    vim.g.terminal_color_11 = colors.color11
-    vim.g.terminal_color_12 = colors.color12
-    vim.g.terminal_color_13 = colors.color13
-    vim.g.terminal_color_14 = colors.color14
-    vim.g.terminal_color_15 = colors.color15
-    vim.g.terminal_color_background = colors.bg
-    vim.g.terminal_color_foreground = colors.fg
 end
 
 return Highlights

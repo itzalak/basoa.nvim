@@ -1,4 +1,5 @@
-local highlights = require "laubwald.highlights"
+local groups = require "laubwald.groups"
+--local highlights = require "laubwald.highlights"
 local config = require "laubwald.config"
 local palette = require "laubwald.palette"
 
@@ -31,8 +32,11 @@ function Laubwald.load(theme)
     config.setup()
 
     colors = palette.palette(theme)
-    highlights.set_terminal_colors(colors)
-    highlights.set_highlights(colors)
+    groups.set_terminal_colors(colors)
+    groups.set_highlights(colors, config.options)
+    -- TODO: DELETE
+    --highlights.set_terminal_colors(colors)
+    --highlights.set_highlights(colors, config.options)
 end
 
 return Laubwald
