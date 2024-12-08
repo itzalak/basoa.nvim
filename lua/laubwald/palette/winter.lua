@@ -25,4 +25,5 @@ return {
     spotlight = "#d77c6e",
     description = "#88b1e5",
     faded = "#75ae80",
+    hyper = "#c899de",
 }

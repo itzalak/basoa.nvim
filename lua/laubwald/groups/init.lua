@@ -9,6 +9,8 @@ function Groups.set_highlights(colors, opts)
         "fzf",
         "snacks",
         "nvim-tree",
+        "render-markdown",
+        "tree-sitter",
         "telescope",
         "which-key",
     }
