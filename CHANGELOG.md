@@ -1,3 +1,16 @@
+## v0.0.2 (2024-12-08)
+
+### Changed
+
+- split highlights groups for render markdown and inital split for treesitter
+- split highlights groups for nvim tree and some harmonization
+- split highlights groups for fzf
+- split highlights groups for snacks and gitsigns
+- split highlights groups for telescope and which key
+- apply pre commit formatting
+- update pre commit plugins
+- break base colors from palette
+
 ## v0.0.1 (2024-12-08)
 
 ### Changed
