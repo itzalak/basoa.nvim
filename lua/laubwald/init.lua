@@ -1,5 +1,5 @@
 local highlights = require "laubwald.highlights"
-local config = require("laubwald.config")
+local config = require "laubwald.config"
 local palette = require "laubwald.palette"
 
 ---@class Laubwald

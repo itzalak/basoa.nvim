@@ -8,5 +8,5 @@ return {
 
     black = "#040b05",
     white = "#e6f6e8",
-    none = "NONE"
+    none = "NONE",
 }

@@ -18,5 +18,4 @@ return {
     color13 = "#ceb5fd",
     color14 = "#42daf1",
     color15 = "#f3fbdf",
-
 }
