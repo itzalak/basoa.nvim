@@ -7,8 +7,9 @@ function M.get(colors, opts)
         TelescopeNormal = { link = "Normal" },
         TelescopeResultsComment = { link = "Comment" },
         TelescopeBorder = { link = "FloatBorder" },
-        TelescopeMatching = { fg = colors.color03, italic = opts.bold },
-        TelescopeSelection = { fg = colors.color02 },
+        TelescopeMatching = { fg = colors.description, italic = opts.bold },
+        TelescopeSelection = { fg = colors.info },
+        TelescopePromptPrefix = { fg = colors.spotlight },
     }
 end
 

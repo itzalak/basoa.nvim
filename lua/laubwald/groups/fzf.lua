@@ -2,19 +2,20 @@ local M = {}
 
 function M.get(colors, opts)
     -- https://github.com/ibhagwan/fzf-lua
+    -- https://github.com/ibhagwan/fzf-lua?tab=readme-ov-file#highlights
     return {
-        FzfLuaNormal = { fg = colors.fg, bg = colors.bg },
-        FzfLuaBorder = { fg = colors.border, bg = colors.bg },
+        FzfLuaNormal = { link = "Normal" },
+        FzfLuaBorder = { link = "FloatBorder" },
         FzfLuaTitle = { fg = colors.border, bg = colors.bg },
-        FzfLuaCursor = { link = "IncSearch" },
-        FzfLuaFzfCursorLine = { bg = colors.info },
-        FzfLuaFzfNormal = { fg = colors.fg },
-        FzfLuaDirPart = { fg = colors.color08 },
-        FzfLuaFilePart = { link = "FzfLuaFzfNormal" },
-        FzfLuaFzfPointer = { fg = colors.error, bg = colors.bg },
-        FzfLuaFzfPrompt = { fg = colors.error, bg = colors.bg },
+        FzfLuaCursor = { link = "Cursor" },
+        FzfLuaFzfCursorLine = { link = "Cursor" },
+        FzfLuaFzfNormal = { link = "Normal" },
+        FzfLuaDirPart = { fg = colors.faded },
+        FzfLuaFilePart = { fg = colors.description },
+        FzfLuaFzfPointer = { fg = colors.spotlight },
+        FzfLuaFzfPrompt = { fg = colors.spotlight },
 
-        FzfLuaHeaderBind = { fg = colors.error },
+        FzfLuaHeaderBind = { fg = colors.spotlight },
         FzfLuaHeaderText = { fg = colors.hint },
     }
 end

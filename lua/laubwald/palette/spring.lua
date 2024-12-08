@@ -19,8 +19,12 @@ return {
     color14 = "#47ac9b",
     color15 = "#e6f6e8",
 
-    border = "#a2bc3c",
     info = "#a2bc3c",
     error = "#e14433",
-    hint = "#47ac9b",
+
+    border = "#a2bc3c",
+    active = "#ec984d",
+    spotlight = "#f36552",
+    description = "#4fa1d7",
+    faded = "#3a6243",
 }

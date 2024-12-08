@@ -19,5 +19,10 @@ return {
     color14 = "#52c2c2",
     color15 = "#fcf5ef",
 
+    -- TODO: Revisit accents
     border = "#ecbc95",
+    active = "#74aa54",
+    spotlight = "#52c2c2",
+    description = "#629be3",
+    faded = "#7c6831",
 }

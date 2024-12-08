@@ -8,6 +8,7 @@ function Groups.set_highlights(colors, opts)
         "git",
         "fzf",
         "snacks",
+        "nvim-tree",
         "telescope",
         "which-key",
     }

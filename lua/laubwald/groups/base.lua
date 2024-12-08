@@ -3,6 +3,19 @@ local BaseHighlights = {}
 function BaseHighlights.get(colors, opts)
     return {
         Normal = { fg = colors.fg, bg = colors.bg },
+        NormalFloat = { link = "Normal" }, -- text in floating windows
+        NormalNC = { link = "Normal" }, -- normal text in non-current windows
+        NormalSB = { link = "Normal" }, -- normal text in sidebar
+
+        Cursor = { fg = colors.bg, bg = colors.fg }, -- character under the cursor
+        lCursor = { link = "Cursor" }, -- character under the cursor when language-mapping is used
+        CursorIM = { link = "Cursor" },
+        CursorLine = { link = "Cursor" }, -- column at the cursor when 'cursorcolumn' is set
+        CursorColumn = { link = "Cursor" }, -- line at the cursor when 'cursorline' is set
+
+        WinSeparator = { fg = colors.border, bg = colors.bg }, -- column separating vertically split windows
+        VertSplit = { fg = colors.border, bg = colors.bg }, -- column separating vertically split windows
+
         SignColumn = { bg = colors.bg },
         MsgArea = { fg = colors.fg, bg = colors.bg },
         ModeMsg = { fg = colors.fg, bg = colors.bg },
@@ -11,23 +24,22 @@ function BaseHighlights.get(colors, opts)
         SpellCap = { fg = colors.color03, undercurl = opts.undercurl },
         SpellLocal = { fg = colors.color02, undercurl = opts.undercurl },
         SpellRare = { fg = colors.color05, italic = opts.underline, undercurl = opts.undercurl },
-        NormalNC = { fg = colors.fg, bg = colors.bg },
+
         Pmenu = { fg = colors.border, bg = colors.bg, sp = colors.none },
         PmenuSel = { fg = colors.bg, bg = colors.color04 },
         WildMenu = { fg = colors.fg, bg = colors.color04 },
+
         CursorLineNr = { fg = colors.color00, italic = opts.bold },
-        Comment = { fg = colors.color08, italic = opts.italics },
+
+        Comment = { fg = colors.faded, italic = opts.italics },
         Folded = { fg = colors.color00, bg = colors.color00 },
         FoldColumn = { fg = colors.color00, bg = colors.color00 },
         LineNr = { fg = colors.color08 },
         Whitespace = { fg = colors.bg },
-        VertSplit = { fg = colors.color08, bg = colors.bg },
-        CursorLine = { bg = colors.bg },
-        CursorColumn = { bg = colors.bg },
+
         ColorColumn = { bg = colors.bg },
-        NormalFloat = { bg = colors.bg },
         FloatBorder = { fg = colors.border, bg = colors.bg },
-        FloatTitle = { bg = colors.color00 },
+        FloatTitle = { fg = colors.border, bg = colors.bg },
         Visual = { bg = colors.color04 },
         VisualNOS = { bg = colors.color00 },
         WarningMsg = { fg = colors.warning, bg = colors.bg },
@@ -41,15 +53,11 @@ function BaseHighlights.get(colors, opts)
         MatchParen = { fg = colors.color04, bg = colors.bg, italic = opts.underline },
         MatchWordCur = { italic = opts.underline },
         MatchParenCur = { italic = opts.underline },
-        Cursor = { fg = colors.color00, bg = colors.color08 },
-        lCursor = { fg = colors.color00, bg = colors.color08 },
-        CursorIM = { fg = colors.color00, bg = colors.color08 },
-        TermCursor = { fg = colors.color00, bg = colors.color08 },
-        TermCursorNC = { fg = colors.color00, bg = colors.color08 },
+
         Conceal = { fg = colors.color00 },
         Directory = { fg = colors.color04 },
         SpecialKey = { fg = colors.color04, italic = opts.bold },
-        Title = { fg = colors.color04, italic = opts.bold },
+        Title = { fg = colors.border, italic = opts.bold },
         ErrorMsg = { fg = colors.error, bg = colors.bg, italic = opts.bold },
         Search = { fg = colors.color00, bg = colors.color04 },
         IncSearch = { fg = colors.color09, bg = colors.color00 },
@@ -61,11 +69,11 @@ function BaseHighlights.get(colors, opts)
         Variable = { fg = colors.color12 },
         String = { fg = colors.color09 },
         Character = { fg = colors.color09 },
-        Constant = { fg = colors.color12 },
+        Constant = { fg = colors.description },
         Number = { fg = colors.color10 },
         Boolean = { fg = colors.color04 },
         Float = { fg = colors.color10 },
-        Identifier = { fg = colors.color12 },
+        Identifier = { fg = colors.spotlight },
         Function = { fg = colors.color03 },
         Operator = { fg = colors.fg },
         Type = { fg = colors.color12 },
@@ -83,12 +91,12 @@ function BaseHighlights.get(colors, opts)
         Define = { fg = colors.color05 },
         Macro = { fg = colors.color05 },
         PreCondit = { fg = colors.color05 },
-        Special = { fg = colors.color09 },
+        Special = { fg = colors.active },
         SpecialChar = { fg = colors.fg },
         Tag = { fg = colors.color04 },
         Debug = { fg = colors.color01 },
         Delimiter = { fg = colors.color08 },
-        SpecialComment = { fg = colors.color08 },
+        SpecialComment = { fg = colors.faded },
         Underlined = { italic = opts.underline },
         Bold = { italic = opts.bold },
         Italic = { italic = opts.italics },

@@ -4,10 +4,10 @@ function M.get(colors, opts)
     -- https://github.com/folke/snacks.nvim
     return {
         -- Dashboard
-        SnacksDashboardHeader = { fg = colors.color02 },
-        SnacksDashboardDesc = { fg = colors.color04 },
-        SnacksDashboardIcon = { fg = colors.color04 },
-        SnacksDashboardFooter = { fg = colors.color04 },
+        SnacksDashboardHeader = { link = "FloatTitle" },
+        SnacksDashboardDesc = { fg = colors.spotlight },
+        SnacksDashboardIcon = { fg = colors.spotlight },
+        SnacksDashboardFooter = { fg = colors.description },
         SnacksDashboardKey = { fg = colors.color02 },
         SnacksDashboardSpecial = { fg = colors.color01 },
         SnacksDashboardDir = { fg = colors.color11 },
