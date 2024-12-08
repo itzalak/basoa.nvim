@@ -20,4 +20,7 @@ return {
     color15 = "#f3fbdf",
 
     border = "#b9d64a",
+    error = "#f36552",
+    info = "#b9d64a",
+    hint = "#bd97fc",
 }

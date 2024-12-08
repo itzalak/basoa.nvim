@@ -19,8 +19,8 @@ return {
     color14 = "#47ac9b",
     color15 = "#e6f6e8",
 
-    border = "#90c99b",
+    border = "#a2bc3c",
     info = "#a2bc3c",
     error = "#e14433",
-    hint = "#bb9af6",
+    hint = "#47ac9b",
 }
