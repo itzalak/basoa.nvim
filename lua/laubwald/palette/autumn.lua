@@ -1,4 +1,4 @@
-local colors = {
+return {
 
     bg = "#1c2717",
     fg = "#edf0e0",
@@ -19,13 +19,4 @@ local colors = {
     color14 = "#52c2c2",
     color15 = "#fcf5ef",
 
-    warning = "#ebbe2f",
-    error = "#e07565",
-    info = "#5bae6f",
-    hint = "#43a9b9",
-
-    black = "#040b05",
-    white = "#e6f6e8",
 }
-
-return colors

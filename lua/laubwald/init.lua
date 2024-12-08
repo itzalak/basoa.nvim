@@ -1,13 +1,13 @@
 local highlights = require "laubwald.highlights"
---local config = require("laubwald.config")
+local config = require("laubwald.config")
 local palette = require "laubwald.palette"
 
----@class Mondego
-local Mondego = {}
+---@class Laubwald
+local Laubwald = {}
 
 --- main function
 ---@param theme string|nil
-function Mondego.load(theme)
+function Laubwald.load(theme)
     if vim.version().minor < 8 then
         vim.notify "laubwald.nvim: you must use neovim 0.8 or higher"
         return
@@ -28,11 +28,11 @@ function Mondego.load(theme)
     vim.o.termguicolors = true
 
     -- TODO: Set user defined options
-    --config.setup()
+    config.setup()
 
     colors = palette.palette(theme)
     highlights.set_terminal_colors(colors)
     highlights.set_highlights(colors)
 end
 
-return Mondego
+return Laubwald
