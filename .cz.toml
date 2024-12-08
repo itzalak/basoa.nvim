@@ -1,0 +1,16 @@
+[tool.commitizen]
+name = "cz_customize"
+tag_format = "v$major.$minor.$patch"
+version_scheme = "semver"
+version = "0.0.0"
+update_changelog_on_bump = true
+
+[tool.commitizen.customize]
+schema = "<type>: <body>"
+schema_pattern = "(bump|break|feat|chore|fix):(\\s.*)"
+bump_pattern = "^(bump|break|feat|tools|fix|chore)"
+bump_map = { "break" = "MAJOR", "feat" = "MINOR", "fix" = "PATCH", "chore" = "PATCH" }
+change_type_order = ["break", "feat", "fix", "chore"]
+commit_parser = "^(?P<change_type>break|feat|chore|fix):\\s(?P<message>.*)?"
+changelog_pattern = "^(break|feat|chore|fix)?(!)?"
+change_type_map = { "break" = "Breaking Change", "feat" = "Changed", "fix" = "Fixed", "chore" = "Changed"}
