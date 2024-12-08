@@ -4,14 +4,6 @@ local Highlights = {}
 function Highlights.get(colors, opts)
     return {
 
-        -- Git
-        SignAdd = { fg = colors.color02 },
-        SignChange = { fg = colors.color03 },
-        SignDelete = { fg = colors.color01 },
-        GitSignsAdd = { fg = colors.color02 },
-        GitSignsChange = { fg = colors.color03 },
-        GitSignsDelete = { fg = colors.color01 },
-
         ---- TODO: Revisit colors
         ---- markdown
         --markdownBlockquote = { fg = colors.color02 },
@@ -318,15 +310,6 @@ function Highlights.get(colors, opts)
         IndentBlanklineChar = { fg = colors.color00 },
         IndentBlanklineSpaceChar = { fg = colors.color12 },
         IndentBlanklineSpaceCharBlankline = { fg = colors.color03 },
-
-        -- Dashboard
-        DashboardCenter = { fg = colors.color05 },
-        DashboardDesc = { fg = colors.color08 },
-        DashboardFooter = { fg = colors.color12 },
-        DashboardHeader = { fg = colors.color04 },
-        DashboardIcon = { fg = colors.color08, italic = opts.bold },
-        DashboardKey = { fg = colors.color09 },
-        DashboardShortCut = { fg = colors.color09 },
 
         -- Cmp
         CmpItemAbbrDeprecated = { fg = colors.color08, italic = opts.strikethrough },

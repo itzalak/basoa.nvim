@@ -5,6 +5,8 @@ function Groups.set_highlights(colors, opts)
 
     Groups.plugins = {
         "highlights",
+        "git",
+        "snacks",
         "telescope",
         "which-key",
     }
