@@ -1,3 +1,11 @@
+## v0.0.3 (2024-12-09)
+
+### Changed
+
+- split highlights groups for render multiple plugins
+- include a night colorscheme
+- color adjustments and readme
+
 ## v0.0.2 (2024-12-08)
 
 ### Changed
