@@ -2,13 +2,14 @@ local BaseHighlights = {}
 
 function BaseHighlights.get(colors, opts)
     return {
+
         Normal = { fg = colors.fg, bg = colors.bg },
         NormalFloat = { link = "Normal" }, -- text in floating windows
         NormalNC = { link = "Normal" }, -- normal text in non-current windows
         NormalSB = { link = "Normal" }, -- normal text in sidebar
         Conceal = { fg = colors.faded }, -- placeholder characters substituted for concealed text
 
-        Cursor = { fg = colors.bg, bg = colors.fg }, -- character under the cursor
+        Cursor = { fg = colors.bg, bg = colors.faded }, -- character under the cursor
         lCursor = { link = "Cursor" }, -- character under the cursor when language-mapping is used
         CursorIM = { link = "Cursor" },
         CursorLine = { link = "Cursor" }, -- column at the cursor when 'cursorcolumn' is set
