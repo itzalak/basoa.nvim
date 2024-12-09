@@ -37,18 +37,29 @@ function BaseHighlights.get(colors, opts)
         SpecialChar = { fg = colors.hyper },
         Underlined = { fg = colors.hyper, italic = opts.underline }, -- text that stands out, HTML links
 
-        -- diagnostics
+        TabLine = { fg = colors.faded, bg = colors.bg }, -- tab pages line, not active tab page label
+        TabLineFill = { fg = colors.faded, bg = colors.bg }, -- tab pages line, where there are no labels
+        TabLineSel = { fg = colors.border, bg = colors.faded }, -- tab pages line, active tab page label
+
+        -- StatusLine
+        StatusLine = { fg = colors.faded, bg = colors.bg }, -- status line of current window
+        StatusLineNC = { fg = colors.faded, bg = colors.bg },
+        StatusLineSeparator = { fg = colors.border },
+        StatusLineTerm = { link = "StatusLine" },
+        StatusLineTermNC = { link = "StatusLineNC" },
+
+        -- Diagnostics
         DiagnosticOk = { fg = colors.description },
         DiagnosticError = { fg = colors.error },
         DiagnosticWarn = { fg = colors.warning },
         DiagnosticInfo = { fg = colors.info },
         DiagnosticHint = { fg = colors.hint },
         DiagnosticUnnecessary = { fg = colors.faded },
-        DiagnosticSignError = { fg = colors.error },
-        DiagnosticSignWarning = { fg = colors.warning },
-        DiagnosticSignInformation = { fg = colors.info },
-        DiagnosticSignInfo = { fg = colors.info },
-        DiagnosticSignHint = { fg = colors.hint },
+        DiagnosticSignError = { link = "DiagnosticError" },
+        DiagnosticSignWarning = { link = "DiagnosticWarn" },
+        DiagnosticSignInformation = { link = "DiagnosticInfo" },
+        DiagnosticSignInfo = { link = "DiagnosticInfo" },
+        DiagnosticSignHint = { link = "DiagnosticHint" },
         DiagnosticUnderlineError = { sp = colors.error, undercurl = opts.undercurl },
         DiagnosticUnderlineWarn = { sp = colors.warning, undercurl = opts.undercurl },
         DiagnosticUnderlineInfo = { sp = colors.info, undercurl = opts.undercurl },
@@ -125,9 +136,6 @@ function BaseHighlights.get(colors, opts)
         Ignore = { fg = colors.color12, bg = colors.bg, italic = opts.bold },
         Todo = { fg = colors.color13, bg = colors.bg, italic = opts.bold },
         Error = { fg = colors.error, bg = colors.bg, italic = opts.bold },
-        TabLine = { fg = colors.color00, bg = colors.color07 },
-        TabLineSel = { fg = colors.fg, bg = colors.color07 },
-        TabLineFill = { fg = colors.color07, bg = colors.color07 },
     }
 end
 

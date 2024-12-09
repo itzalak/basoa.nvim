@@ -4,18 +4,24 @@ function Groups.set_highlights(colors, opts)
     local groups = require("laubwald.groups.base").get(colors, opts)
 
     Groups.plugins = {
-        "highlights",
-        "git",
+        "bufferline",
+        "flash",
         "fzf",
-        "snacks",
+        "git",
+        "grug-far",
+        "highlights",
+        "indent-blankline",
+        "nvim-cmp",
         "nvim-tree",
         "render-markdown",
-        "tree-sitter",
+        "snacks",
         "telescope",
+        "tree-sitter",
+        "trouble",
         "which-key",
     }
 
-    for _, plugin in ipairs(Groups.plugins) do
+    for _, plugin in pairs(Groups.plugins) do
         local ext = require("laubwald.groups." .. plugin)
         groups = vim.tbl_deep_extend("force", groups, ext.get(colors, opts))
     end
