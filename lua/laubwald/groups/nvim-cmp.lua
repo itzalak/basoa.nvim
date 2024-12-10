@@ -34,7 +34,7 @@ function M.get(colors, opts)
         CmpItemKindReference = { fg = colors.fg },
         CmpItemKindOperator = { fg = colors.fg },
         CmpItemKindTypeParameter = { fg = colors.description },
-        CmpItemMenu = { fg = colors.faded },
+        CmpItemMenu = { fg = colors.description },
     }
 end
 

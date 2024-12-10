@@ -7,7 +7,7 @@ function M.get(colors, opts)
 
         NvimTreeFolderIcon = { fg = colors.description },
         NvimTreeGitDeletedIcon = { fg = colors.spotlight },
-        NvimTreeGitDirtyIcon = { fg = colors.color03 },
+        NvimTreeGitDirtyIcon = { fg = colors.active },
     }
 end
 

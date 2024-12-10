@@ -18,10 +18,12 @@ return {
     color13 = "#cdb6f9",
     color14 = "#47ac9b",
     color15 = "#e6f6e8",
-
-    info = "#a2bc3c",
+    none = "NONE",
+    -- customized
+    warning = "#ec984d",
     error = "#e14433",
-
+    info = "#a2bc3c",
+    hint = "#4fa1d7",
     border = "#a2bc3c",
     active = "#ec984d",
     spotlight = "#f36552",

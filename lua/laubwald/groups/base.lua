@@ -16,9 +16,9 @@ function BaseHighlights.get(colors, opts)
         CursorColumn = { link = "Cursor" }, -- line at the cursor when 'cursorline' is set
         CursorLineNr = { fg = colors.faded, italic = opts.bold },
 
-        DiffAdd = { fg = colors.color00, bg = colors.info }, -- Added line
-        DiffChange = { fg = colors.color00, bg = colors.warning, italic = opts.underline }, -- Changed line
-        DiffDelete = { fg = colors.color00, bg = colors.error }, -- Deleted line
+        DiffAdd = { fg = colors.faded, bg = colors.info }, -- Added line
+        DiffChange = { fg = colors.faded, bg = colors.warning, italic = opts.underline }, -- Changed line
+        DiffDelete = { fg = colors.faded, bg = colors.error }, -- Deleted line
 
         SignColumn = { fg = colors.info, bg = colors.bg },
         SignColumnSB = { link = "SignColumn" },
@@ -65,9 +65,11 @@ function BaseHighlights.get(colors, opts)
         DiagnosticUnderlineInfo = { sp = colors.info, undercurl = opts.undercurl },
         DiagnosticUnderlineHint = { sp = colors.hint, undercurl = opts.undercurl },
 
-        MsgArea = { fg = colors.fg, bg = colors.bg },
-        ModeMsg = { fg = colors.fg, bg = colors.bg },
-        MsgSeparator = { fg = colors.fg, bg = colors.bg },
+        MsgArea = { fg = colors.fg, bg = colors.bg }, -- messages and cmdline
+        ModeMsg = { fg = colors.description, bg = colors.bg }, -- showmode message (e.g. "INSERT")
+        MoreMsg = { fg = colors.spotlight }, -- prompt
+        MsgSeparator = { fg = colors.active, bg = colors.bg },
+
         SpellBad = { italic = opts.underline, undercurl = opts.undercurl },
         SpellCap = { fg = colors.color03, undercurl = opts.undercurl },
         SpellLocal = { fg = colors.color02, undercurl = opts.undercurl },
@@ -102,7 +104,6 @@ function BaseHighlights.get(colors, opts)
         Search = { fg = colors.color00, bg = colors.color04 },
         IncSearch = { fg = colors.color09, bg = colors.color00 },
         Substitute = { fg = colors.color00, bg = colors.color09 },
-        MoreMsg = { fg = colors.color09 },
         Question = { fg = colors.color09 },
         EndOfBuffer = { fg = colors.bg },
         NonText = { fg = colors.bg },
