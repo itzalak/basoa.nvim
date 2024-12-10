@@ -1,3 +1,10 @@
+## v0.0.4 (2024-12-10)
+
+### Changed
+
+- introduce lualine config
+- add morning colors
+
 ## v0.0.3 (2024-12-09)
 
 ### Changed
