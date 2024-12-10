@@ -15,6 +15,8 @@ local function palette(theme)
         colorscheme = require "laubwald.palette.spring"
     elseif theme == "night" then
         colorscheme = require "laubwald.palette.night"
+    elseif theme == "morning" then
+        colorscheme = require "laubwald.palette.morning"
     else
         colorscheme = require "laubwald.palette.spring"
     end
