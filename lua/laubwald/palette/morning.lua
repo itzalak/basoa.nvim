@@ -28,6 +28,7 @@ local colors = {
     description = "#4fa1d7",
     faded = "#4d5827",
     hyper = "#9468d8",
+    special = "#3b9586",
 }
 
 return colors

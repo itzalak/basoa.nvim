@@ -8,15 +8,15 @@ function M.get(colors, opts)
         SnacksDashboardDesc = { fg = colors.spotlight },
         SnacksDashboardIcon = { fg = colors.spotlight },
         SnacksDashboardFooter = { fg = colors.description },
-        SnacksDashboardKey = { fg = colors.color02 },
-        SnacksDashboardSpecial = { fg = colors.color01 },
-        SnacksDashboardDir = { fg = colors.color11 },
+        SnacksDashboardKey = { fg = colors.border },
+        SnacksDashboardSpecial = { fg = colors.spotlight },
+        SnacksDashboardDir = { fg = colors.warning },
 
         -- Notify
         SnacksNotifierDebug = { fg = colors.fg, bg = colors.bg },
-        SnacksNotifierBorderDebug = { fg = colors.color06, bg = colors.bg },
-        SnacksNotifierIconDebug = { fg = colors.color06, bg = colors.bg },
-        SnacksNotifierTitleDebug = { fg = colors.color06, bg = colors.bg },
+        SnacksNotifierBorderDebug = { fg = colors.special, bg = colors.bg },
+        SnacksNotifierIconDebug = { fg = colors.special, bg = colors.bg },
+        SnacksNotifierTitleDebug = { fg = colors.special, bg = colors.bg },
 
         SnacksNotifierError = { fg = colors.fg, bg = colors.bg },
         SnacksNotifierBorderError = { fg = colors.error, bg = colors.bg },

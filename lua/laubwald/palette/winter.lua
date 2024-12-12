@@ -26,4 +26,5 @@ return {
     description = "#88b1e5",
     faded = "#75ae80",
     hyper = "#c899de",
+    special = "#52a9a9",
 }

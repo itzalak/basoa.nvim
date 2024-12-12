@@ -4,7 +4,7 @@ I wanted to try a dark green color scheme and could not find one that pleased me
 
 This is a learn as you go kind of project.
 
-For now the focus is on the "spring" colorscheme.
+For now the focus is on the "spring" color scheme.
 
 ## Inspiration and alternatives
 
