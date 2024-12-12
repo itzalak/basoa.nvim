@@ -1,3 +1,9 @@
+## v0.0.6 (2024-12-12)
+
+### Changed
+
+- revisit highlights for navic
+
 ## v0.0.5 (2024-12-12)
 
 ### Changed
