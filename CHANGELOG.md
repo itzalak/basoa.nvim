@@ -1,3 +1,9 @@
+## v0.0.5 (2024-12-12)
+
+### Changed
+
+- revisit highlights
+
 ## v0.0.4 (2024-12-10)
 
 ### Changed
