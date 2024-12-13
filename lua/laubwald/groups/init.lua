@@ -18,6 +18,7 @@ function Groups.set_highlights(colors, opts)
         "telescope",
         "tree-sitter",
         "trouble",
+        "yanky",
         "which-key",
     }
 
