@@ -1,3 +1,9 @@
+## v0.0.7 (2024-12-13)
+
+### Changed
+
+- Add yanky config
+
 ## v0.0.6 (2024-12-12)
 
 ### Changed
