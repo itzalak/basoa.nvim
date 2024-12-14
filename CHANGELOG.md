@@ -1,3 +1,9 @@
+## v0.0.10 (2024-12-14)
+
+### Changed
+
+- tweak treesitter parameter
+
 ## v0.0.9 (2024-12-14)
 
 ### Changed
