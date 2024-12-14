@@ -1,3 +1,9 @@
+## v0.0.9 (2024-12-14)
+
+### Changed
+
+- update treesitter highlights for programming
+
 ## v0.0.8 (2024-12-14)
 
 ### Changed
