@@ -1,3 +1,9 @@
+## v0.0.8 (2024-12-14)
+
+### Changed
+
+- small corrections
+
 ## v0.0.7 (2024-12-13)
 
 ### Changed
