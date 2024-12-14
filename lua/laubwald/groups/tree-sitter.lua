@@ -69,7 +69,7 @@ function M.get(colors, opts)
         ["@string.special.path"] = { link = "Underlined" },
         ["@string.special.symbol"] = { link = "Operator" },
         ["@string.special.url"] = { link = "Underlined" },
-        ["@string.documentation"] = { link = "Comment"},
+        ["@string.documentation"] = { link = "Comment" },
         ["@character"] = { link = "Character" },
         ["@character.special"] = { link = "SpecialChar" },
         ["@boolean"] = { link = "Boolean" },

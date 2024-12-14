@@ -29,7 +29,7 @@ function BaseHighlights.get(colors, opts)
         Comment = { fg = colors.faded, italic = opts.italics },
         SpecialComment = { fg = colors.special, italic = opts.italics },
         PreProc = { fg = colors.color11 }, -- generic Preprocessor
-        String = { fg = colors.border}, -- a string constant
+        String = { fg = colors.border }, -- a string constant
         SpecialChar = { fg = colors.hyper },
         Underlined = { fg = colors.hyper, underline = opts.underline }, -- text that stands out, HTML links
         TabLine = { fg = colors.faded, bg = colors.bg }, -- tab pages line, not active tab page label
