@@ -24,12 +24,12 @@ function BaseHighlights.get(colors, opts)
         LineNr = { fg = colors.faded },
         ColorColumn = { bg = colors.bg }, -- used for the columns set with 'colorcolumn'
 
-        Special = { fg = colors.active }, -- any special symbol
+        Special = { fg = colors.special }, -- any special symbol
         Delimiter = { link = "Special" }, --  character that needs attention
         Comment = { fg = colors.faded, italic = opts.italics },
         SpecialComment = { fg = colors.special, italic = opts.italics },
         PreProc = { fg = colors.color11 }, -- generic Preprocessor
-        String = { fg = colors.fg }, -- a string constant
+        String = { fg = colors.border}, -- a string constant
         SpecialChar = { fg = colors.hyper },
         Underlined = { fg = colors.hyper, underline = opts.underline }, -- text that stands out, HTML links
         TabLine = { fg = colors.faded, bg = colors.bg }, -- tab pages line, not active tab page label
@@ -104,18 +104,18 @@ function BaseHighlights.get(colors, opts)
         EndOfBuffer = { fg = colors.faded }, -- filler lines (~) after the end of the buffer
         NonText = { link = "EndOfBuffer" },
         Variable = { fg = colors.description },
-        Character = { fg = colors.border },
-        Constant = { fg = colors.active },
-        Number = { fg = colors.border },
+        Character = { fg = colors.fg },
+        Constant = { fg = colors.active, bold = opts.bold },
+        Number = { fg = colors.active },
         Boolean = { fg = colors.active },
         Float = { fg = colors.active },
         Identifier = { link = "Variable" }, -- any variable name
-        Function = { fg = colors.hyper },
+        Function = { fg = colors.description },
         Operator = { fg = colors.hyper }, -- "sizeof", "+", "*", etc.
-        Type = { fg = colors.description }, -- int, long, char, etc.
+        Type = { fg = colors.active }, -- int, long, char, etc.
         StorageClass = { fg = colors.description },
         Structure = { fg = colors.description },
-        Typedef = { fg = colors.description },
+        Typedef = { fg = colors.hyper },
         Keyword = { fg = colors.hyper },
         Statement = { fg = colors.hyper },
         Conditional = { fg = colors.hyper },
