@@ -9,13 +9,12 @@ function BaseHighlights.get(colors, opts)
         NormalSB = { link = "Normal" }, -- normal text in sidebar
         Conceal = { fg = colors.faded }, -- placeholder characters substituted for concealed text
 
-        Cursor = { fg = colors.bg, bg = colors.faded }, -- character under the cursor
+        Cursor = { fg = colors.faded }, -- character under the cursor
         lCursor = { link = "Cursor" }, -- character under the cursor when language-mapping is used
         CursorIM = { link = "Cursor" },
-        CursorLine = { link = "Cursor" }, -- column at the cursor when 'cursorcolumn' is set
-        CursorColumn = { link = "Cursor" }, -- line at the cursor when 'cursorline' is set
-        CursorLineNr = { fg = colors.faded, bold = opts.bold },
-
+        CursorLine = { bg = colors.black }, --- line at the cursor when 'cursorline' is set
+        CursorColumn = { link = "Cursor" }, -- column at the cursor when 'cursorcolumn' is set
+        CursorLineNr = { fg = colors.warning, bold = opts.bold },
         DiffAdd = { fg = colors.faded, bg = colors.info }, -- Added line
         DiffChange = { fg = colors.faded, bg = colors.warning, bold = opts.bold }, -- Changed line
         DiffDelete = { fg = colors.faded, bg = colors.error }, -- Deleted line

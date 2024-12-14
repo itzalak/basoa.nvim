@@ -31,7 +31,7 @@ function Laubwald.load(theme)
     -- TODO: Set user defined options
     config.setup()
 
-    colors = palette.palette(theme)
+    local colors = palette.palette(theme)
     groups.set_terminal_colors(colors)
     groups.set_highlights(colors, config.options)
     -- TODO: DELETE
