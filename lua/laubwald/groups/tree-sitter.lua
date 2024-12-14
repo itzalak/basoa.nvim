@@ -91,7 +91,7 @@ function M.get(colors, opts)
         ["@method"] = { link = "Function" },
         ["@method.call"] = { link = "Function" },
         ["@constructor"] = { link = "Special" },
-        ["@parameter"] = { link = "Identifier" },
+        ["@parameter"] = { fg = colors.spotlight },
         ["@conditional"] = { link = "Conditional" },
         ["@repeat"] = { link = "Repeat" },
         ["@debug"] = { link = "Debug" },
