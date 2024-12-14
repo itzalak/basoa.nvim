@@ -1,3 +1,9 @@
+## v0.0.11 (2024-12-14)
+
+### Changed
+
+- update pre commit config, apply suggestions
+
 ## v0.0.10 (2024-12-14)
 
 ### Changed
