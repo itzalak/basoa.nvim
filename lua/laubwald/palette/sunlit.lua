@@ -1,0 +1,30 @@
+return {
+
+    bg = "#202609",
+    fg = "#e4f3bb",
+    color00 = "#363f14",
+    color01 = "#cd8275",
+    color02 = "#80a66b",
+    color03 = "#c88953",
+    color04 = "#8396d1",
+    color05 = "#bf63a5",
+    color06 = "#5ea5b2",
+    color07 = "#bcd36a",
+    color08 = "#63722c",
+    color09 = "#dc9b90",
+    color10 = "#94bc7f",
+    color11 = "#dd9f6b",
+    color12 = "#9cacdd",
+    color13 = "#b8a0e4",
+    color14 = "#73bbc8",
+    color15 = "#f4fae5",
+
+    -- TODO: Revisit accents
+    border = "#c88953",
+    active = "#bcd36a",
+    spotlight = "#bf63a5",
+    description = "#73bbc8",
+    faded = "#63722c",
+    hyper = "#b8a0e4",
+    special = "#5ea5b2",
+}
