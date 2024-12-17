@@ -1,3 +1,9 @@
+## v0.0.12 (2024-12-17)
+
+### Changed
+
+- add sunlit, temporary scheme, to merge with summer
+
 ## v0.0.11 (2024-12-14)
 
 ### Changed
