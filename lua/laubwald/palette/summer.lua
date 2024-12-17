@@ -18,12 +18,11 @@ return {
     color13 = "#ceb5fd",
     color14 = "#42daf1",
     color15 = "#f3fbdf",
-
-    -- TODO: Revisit accents
+    -- customized
+    warning = "#fbd66e",
     error = "#f36552",
     info = "#b9d64a",
     hint = "#bd97fc",
-
     border = "#b9d64a",
     active = "#fbd66e",
     spotlight = "#f36552",
