@@ -1,3 +1,9 @@
+## v0.0.14 (2024-12-17)
+
+### Changed
+
+- update night palette
+
 ## v0.0.13 (2024-12-17)
 
 ### Changed
