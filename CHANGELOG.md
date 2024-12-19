@@ -1,3 +1,9 @@
+## v0.0.15 (2024-12-19)
+
+### Changed
+
+- more color adjustments
+
 ## v0.0.14 (2024-12-17)
 
 ### Changed
