@@ -18,6 +18,8 @@ local colors = {
     color13 = "#a782e5",
     color14 = "#47ac9b",
     color15 = "#070a02",
+    -- extras
+    extra01 = "#359b54",
     -- customized
     warning = "#cbab4f",
     error = "#cc5d4d",
@@ -30,6 +32,8 @@ local colors = {
     faded = "#4d5827",
     hyper = "#9468d8",
     special = "#3b9586",
+    cursor = "#5bae6f",
+    none = "NONE",
 }
 
 return colors

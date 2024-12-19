@@ -1,5 +1,6 @@
 return {
 
+    -- base colors
     bg = "#152719",
     fg = "#ccedd1",
     color00 = "#224029",
@@ -18,16 +19,22 @@ return {
     color13 = "#cdb6f9",
     color14 = "#47ac9b",
     color15 = "#e6f6e8",
+    -- extras
+    extra01 = "#359b54",
+    extra02 = "#5a77f2",
+    extra03 = "#cf2ec8",
     -- customized
-    warning = "#ec984d",
+    warning = "#f7b37c",
     error = "#e14433",
     info = "#a2bc3c",
-    hint = "#4fa1d7",
-    border = "#a2bc3c",
+    hint = "#5a77f2",
+    border = "#359b54",
     active = "#ec984d",
     spotlight = "#f36552",
     description = "#4fa1d7",
     faded = "#3a6243",
     hyper = "#bb9af6",
     special = "#3b9586",
+    cursor = "#040b05",
+    none = "NONE",
 }

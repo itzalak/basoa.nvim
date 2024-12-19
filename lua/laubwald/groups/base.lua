@@ -12,7 +12,7 @@ function BaseHighlights.get(colors, opts)
         Cursor = { fg = colors.faded }, -- character under the cursor
         lCursor = { link = "Cursor" }, -- character under the cursor when language-mapping is used
         CursorIM = { link = "Cursor" },
-        CursorLine = { bg = colors.black }, --- line at the cursor when 'cursorline' is set
+        CursorLine = { bg = colors.cursor }, --- line at the cursor when 'cursorline' is set
         CursorColumn = { link = "Cursor" }, -- column at the cursor when 'cursorcolumn' is set
         CursorLineNr = { fg = colors.warning, bold = opts.bold },
         DiffAdd = { fg = colors.faded, bg = colors.info }, -- Added line
@@ -28,7 +28,7 @@ function BaseHighlights.get(colors, opts)
         Delimiter = { link = "Special" }, --  character that needs attention
         Comment = { fg = colors.faded, italic = opts.italics },
         SpecialComment = { fg = colors.special, italic = opts.italics },
-        PreProc = { fg = colors.color11 }, -- generic Preprocessor
+        PreProc = { fg = colors.active }, -- generic Preprocessor
         String = { fg = colors.border }, -- a string constant
         SpecialChar = { fg = colors.hyper },
         Underlined = { fg = colors.hyper, underline = opts.underline }, -- text that stands out, HTML links

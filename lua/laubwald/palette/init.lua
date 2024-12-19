@@ -1,8 +1,3 @@
-local function merge(option)
-    local base = require "laubwald.palette.base"
-    return vim.tbl_deep_extend("force", base, option)
-end
-
 local function palette(theme)
     local colorscheme
     if theme == "autumn" then
@@ -18,7 +13,7 @@ local function palette(theme)
     else
         colorscheme = require "laubwald.palette.spring"
     end
-    return merge(colorscheme)
+    return colorscheme
 end
 
 return { palette = palette }

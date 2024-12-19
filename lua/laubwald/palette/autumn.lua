@@ -20,6 +20,11 @@ return {
     color15 = "#fcf5ef",
 
     -- TODO: Revisit accents
+    warning = "#ebbe2f",
+    error = "#e07565",
+    info = "#5bae6f",
+    hint = "#43a9b9",
+
     border = "#ecbc95",
     active = "#74aa54",
     spotlight = "#52c2c2",
@@ -27,4 +32,6 @@ return {
     faded = "#7c6831",
     hyper = "#aa7cf1",
     special = "#44abab",
+    cursor = "#040b05",
+    none = "NONE",
 }

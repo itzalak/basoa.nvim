@@ -18,18 +18,25 @@ local colors = {
     color13 = "#aa7cf1",
     color14 = "#32aabc",
     color15 = "#edf2ee",
+    -- extras
+    extra01 = "#a2bc3c",
+    extra02 = "#5a77f2",
+    extra03 = "#224029",
+    extra04 = "#f7b37c",
     -- customized
-    warning = "#d2a920",
-    error = "#e96e5d",
-    info = "#4fb069",
-    hint = "#4fa1d7",
+    warning = "#f7b37c",
+    error = "#d65342",
+    info = "#a2bc3c",
+    hint = "#2993a3",
     border = "#4fb069",
     active = "#d2a920",
     spotlight = "#e96e5d",
     description = "#4fa1d7",
     faded = "#475749",
     hyper = "#aa7cf1",
-    special = "#2993a3",
+    special = "#5a77f2",
+    cursor = "#224029",
+    none = "NONE",
 }
 
 return colors
