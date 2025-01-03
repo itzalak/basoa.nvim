@@ -5,6 +5,10 @@ Vocke I decided to create my own.
 
 This is a "learn as you go" kind of project.
 
+> Note:
+> Currently only spring and night (and maybe summer) are optimized, all remaining
+> colors schemes are a work in progress and can even be removed.
+
 ## Inspiration and alternatives
 
 - [Article by Ham Vocke](https://hamvocke.com/blog/lets-create-a-terminal-color-scheme/)

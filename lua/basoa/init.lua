@@ -1,5 +1,4 @@
 local groups = require "basoa.groups"
---local highlights = require "basoa.highlights"
 local config = require "basoa.config"
 local palette = require "basoa.palette"
 
@@ -34,9 +33,6 @@ function Basoa.load(theme)
     local colors = palette.palette(theme)
     groups.set_terminal_colors(colors)
     groups.set_highlights(colors, config.options)
-    -- TODO: DELETE
-    --highlights.set_terminal_colors(colors)
-    --highlights.set_highlights(colors, config.options)
 end
 
 return Basoa
