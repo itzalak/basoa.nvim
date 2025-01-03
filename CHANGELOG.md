@@ -1,3 +1,13 @@
+## v1.0.0 (2025-01-03)
+
+### Breaking Change
+
+- rename to basoa
+
+### Fixed
+
+- clean todos and fix lualine
+
 ## v0.0.15 (2024-12-19)
 
 ### Changed
