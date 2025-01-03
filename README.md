@@ -1,10 +1,9 @@
-# Laubwald
+# Basoa
 
-I wanted to try a dark green color scheme and could not find one that pleased me, so that's what this is about.
+I wanted to try a dark green color scheme and could not find one that pleased me, so after reading an article by Ham
+Vocke I decided to create my own.
 
-This is a learn as you go kind of project.
-
-For now the focus is on the "spring" color scheme.
+This is a "learn as you go" kind of project.
 
 ## Inspiration and alternatives
 

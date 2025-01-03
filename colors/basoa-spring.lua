@@ -1,0 +1,1 @@
+require("basoa").load "spring"

@@ -1,7 +1,7 @@
 local Groups = {}
 
 function Groups.set_highlights(colors, opts)
-    local groups = require("laubwald.groups.base").get(colors, opts)
+    local groups = require("basoa.groups.base").get(colors, opts)
 
     Groups.plugins = {
         "bufferline",
@@ -23,7 +23,7 @@ function Groups.set_highlights(colors, opts)
     }
 
     for _, plugin in pairs(Groups.plugins) do
-        local ext = require("laubwald.groups." .. plugin)
+        local ext = require("basoa.groups." .. plugin)
         groups = vim.tbl_deep_extend("force", groups, ext.get(colors, opts))
     end
 

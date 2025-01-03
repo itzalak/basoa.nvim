@@ -1,6 +1,6 @@
 local Config = {}
 
----@class Laubwald.Config
+---@class Basoa.Config
 Config.defaults = {
 
     bold = true,
@@ -13,10 +13,10 @@ Config.defaults = {
     dim_inactive = true,
 }
 
----@type Laubwald.Config
+---@type Basoa.Config
 Config.options = nil
 
----@param opts? Laubwald.Config
+---@param opts? Basoa.Config
 function Config.setup(opts)
     Config.options = vim.tbl_deep_extend("force", Config.defaults, opts or {})
 end

@@ -3,7 +3,7 @@ local M = {}
 function M.get()
     -- https://github.com/nvim-lualine/lualine.nvim
     theme = vim.g.colors_name
-    local colors = require("laubwald.palette").palette(theme)
+    local colors = require("basoa.palette").palette(theme)
 
     local highlights = {}
 

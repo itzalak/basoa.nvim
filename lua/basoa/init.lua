@@ -1,16 +1,16 @@
-local groups = require "laubwald.groups"
---local highlights = require "laubwald.highlights"
-local config = require "laubwald.config"
-local palette = require "laubwald.palette"
+local groups = require "basoa.groups"
+--local highlights = require "basoa.highlights"
+local config = require "basoa.config"
+local palette = require "basoa.palette"
 
----@class Laubwald
-local Laubwald = {}
+---@class Basoa
+local Basoa = {}
 
 --- main function
 ---@param theme string|nil
-function Laubwald.load(theme)
+function Basoa.load(theme)
     if vim.version().minor < 8 then
-        vim.notify "laubwald.nvim: you must use neovim 0.8 or higher"
+        vim.notify "basoa.nvim: you must use neovim 0.8 or higher"
         return
     end
 
@@ -39,4 +39,4 @@ function Laubwald.load(theme)
     --highlights.set_highlights(colors, config.options)
 end
 
-return Laubwald
+return Basoa
